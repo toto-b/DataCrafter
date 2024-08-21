@@ -1,6 +1,9 @@
 #include <stdio.h>
+#include "IOFile.h"
 
 int main(){
-	printf("Hello World");
+	appendToCSV("adf");
+	appendToCSV("\n123");
+	appendToCSV("\n999");
 	return 0;
 }

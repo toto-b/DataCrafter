@@ -1,0 +1,1 @@
+int appendToCSV(char* text);
