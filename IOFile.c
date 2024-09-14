@@ -1,5 +1,4 @@
 #include "IOFile.h"
-#include <corecrt.h>
 #include <stdio.h>
 
 
@@ -7,10 +6,9 @@
 
 int appendToCSV(char *text) {
   FILE *file;
-  errno_t err;
 
-  err = fopen_s(&file, FILENAME, "a+");
-  if (err != 0) {
+  file = fopen(FILENAME, "a+");
+  if (file == NULL) {
     // Handle error, err contains the error code
     perror("fopen_s");
     return -1;
