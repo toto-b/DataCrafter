@@ -4,7 +4,9 @@ cmake_minimum_required(VERSION 3.10)
 project(MyProject C)
 
 # Add the two C files
-add_executable(datacrafter IOFile.c main.c)
+add_executable(datacrafter IOFile.c main.c
+        generator.h
+        generator.c)
 
 # Optionally, set the C standard version
 set(CMAKE_C_STANDARD 99)
