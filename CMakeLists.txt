@@ -3,8 +3,8 @@ cmake_minimum_required(VERSION 3.10)
 # Set the project name and specify C as the language
 project(MyProject C)
 
-# Add the two C files
-add_executable(datacrafter IOFile.c main.c
+# Add the C files
+add_executable(datacrafter io_file.c main.c
         generator.h
         generator.c)
 
